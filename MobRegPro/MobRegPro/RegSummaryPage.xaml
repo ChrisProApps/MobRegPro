@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+	x:Class="MobRegPro.RegSummaryPage">
+ <ContentPage.Content>
+
+	  <StackLayout Padding = "0,5,0,0">
+	  <ScrollView>
+		<StackLayout Padding="10,0,10,0">
+<!--			<Button x:Name="BtnAddRegistration" Text="Add registration" HorizontalOptions="End" Clicked="BtnAddRegistrationClicked"/>-->
+			<StackLayout x:Name="panelAdd" IsVisible ="false">
+				<Label Text="{local:Translate lblCaption}" FontAttributes="Bold" />
+				<Entry x:Name="enCaption" Placeholder="{local:Translate enCaption}" Keyboard="Text" HorizontalOptions="FillAndExpand"/>
+				<Label Text="{local:Translate lblPriority}" FontAttributes="Bold" />
+				<Entry x:Name="enPriority" Placeholder="{local:Translate enPriority}" Keyboard="Numeric" HorizontalOptions="Start"/>
+				<Label Text="{local:Translate lblOnReport}" FontAttributes="Bold" />
+				<Switch x:Name="swOnReport" />
+				<Label Text="{local:Translate lblPicture}" FontAttributes="Bold" />
+				<Switch x:Name="swPicture" />
+				<Label Text="{local:Translate lblRegistration}" FontAttributes="Bold" />
+				<Editor x:Name="edResult" HorizontalOptions="FillAndExpand" HeightRequest="200">
+<!--						<Editor.BackgroundColor>
+		                    <OnPlatform x:TypeArguments="x:Color"
+		                        iOS="#a4eaff"
+		                        Android="#2c3e50"
+		                        WinPhone="#2c3e50" />
+	                	</Editor.BackgroundColor>-->
+				</Editor>
+
+				<StackLayout Orientation="Horizontal">
+					<Button x:Name="BtnAddConfirm" Text="{local:Translate OK}" Clicked="BtnAddConfirmClicked"/>
+					<Label Text="      "/>
+					<Button x:Nmae="BtnAddCancel" Text="{local:Translate Cancel}" Clicked="BtnAddCancelClicked"/>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+		</ScrollView>
+
+		<ListView x:Name="lvRegistrations" SeparatorColor="White" RowHeight="72" >
+			<ListView.ItemTemplate>
+				<DataTemplate>
+				 	<ViewCell>
+		      			 <ViewCell.View>
+
+				      				<StackLayout Orientation="Horizontal" BackgroundColor="#C4C4C4" Padding="5,5,0,4">
+				      				<StackLayout.HeightRequest>
+				      					<!-- sys:Double requires adding => xmlns:sys="clr-namespace:System;assembly=mscorlib" -->
+					      				<OnPlatform x:TypeArguments="sys:Double" iOS="72" Android="72" WinPhone="72"/>
+				      				</StackLayout.HeightRequest>
+				      					<Image Source="{Binding RegTypeIcon}" Aspect="AspectFit" />
+					      				<StackLayout Padding="5,5,5,5">
+					      					<StackLayout Orientation="Horizontal">
+					      						<Label Text="{Binding Priority, StringFormat='({0:d})' }" TextColor="Black"/>
+					      						<Label Text="{Binding Caption}" TextColor="{Binding RegColor}" LineBreakMode="TailTruncation" /> 
+					      					</StackLayout>
+					  	      				<Label Text="{Binding Result}" LineBreakMode="TailTruncation" VerticalOptions="Center" TextColor="Black"/>
+					    				</StackLayout>
+				      				</StackLayout>
+			      		
+		      			 </ViewCell.View>
+      				</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>

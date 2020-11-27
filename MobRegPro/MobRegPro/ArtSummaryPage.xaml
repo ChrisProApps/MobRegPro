@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="MobRegPro.ArtSummaryPage"
+  Title="{local:Translate Articles}"
+	xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro">
+	<ContentPage.Content>
+	 	<ScrollView>
+			<StackLayout Padding="10,20,10,0">
+
+				<Grid x:Name="inputGrid">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.6*"/>
+						<ColumnDefinition Width="0.1*"/>
+						<ColumnDefinition Width="0.3*"/>
+					</Grid.ColumnDefinitions>
+					<Entry x:Name="tbArticleID" Grid.Row="0" Grid.Column="0" Placeholder="{local:Translate tbArticleID}" Unfocused="TbArticleID_Unfocused" />
+					<Button x:Name="BtnScan" Grid.Row="0" Grid.Column="2" Text="{local:Translate Scanning}" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Clicked="BtnScan_Clicked"/>
+					<Label x:Name="lbArticleName" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" IsVisible="false" FontSize="Large" LineBreakMode="TailTruncation" HorizontalOptions="StartAndExpand">
+						<Label.TextColor>
+							<OnPlatform x:TypeArguments="Color"
+								iOS="Blue"
+								Android="#2ECCFA"
+								WinPhone="#2ECCFA" />
+						</Label.TextColor>
+					</Label>
+					<Entry x:Name="tbQty" Grid.Row="2" Grid.Column="0" Placeholder="{local:Translate tbQty}" Keyboard="Numeric"/>
+				</Grid>
+				<StackLayout Padding="20,0,20,0">
+					<Button x:Name="BtnAdd" Text="{local:Translate btnAdd}" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Clicked="BtnAdd_Clicked"/>
+				</StackLayout>
+				<ListView x:Name="lvRegs" ItemTapped="ItemTapped">
+				 	<ListView.SeparatorVisibility>
+				 		<OnPlatform x:TypeArguments="SeparatorVisibility" 
+				 			iOS="None"
+				 			Android="Default"
+				 			WinPhone="Default" />
+				 	</ListView.SeparatorVisibility>
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<TextCell Text="{Binding Info}" Detail="{Binding Name}"/>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

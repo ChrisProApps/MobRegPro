@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DemoLicenseActivated" xml:space="preserve">
+    <value>Demo licentie geactiveerd</value>
+    <comment>StartPage.cs</comment>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Starten</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnSettings" xml:space="preserve">
+    <value>Instellingen</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnAbout" xml:space="preserve">
+    <value>Info</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnActivate" xml:space="preserve">
+    <value>Activeren</value>
+  </data>
+  <data name="lbProgress" xml:space="preserve">
+    <value>Opstarten...</value>
+  </data>
+  <data name="tbName" xml:space="preserve">
+    <value>Contact naam :</value>
+  </data>
+  <data name="tbMail" xml:space="preserve">
+    <value>Contact email :</value>
+  </data>
+  <data name="padViewPrompt" xml:space="preserve">
+    <value>Teken hier</value>
+  </data>
+  <data name="padViewClear" xml:space="preserve">
+    <value>Opkuisen</value>
+  </data>
+  <data name="itemSummary" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="SignatureTooLong" xml:space="preserve">
+    <value>Handtekening te groot. Kan niet worden opgeslagen.</value>
+  </data>
+  <data name="cpSettings" xml:space="preserve">
+    <value>Instellingen</value>
+  </data>
+  <data name="tbsTitle" xml:space="preserve">
+    <value>Standaard credentials</value>
+  </data>
+  <data name="swDefaultInUse" xml:space="preserve">
+    <value>Gebruik standaard instellingen</value>
+  </data>
+  <data name="tbDefaultUsername" xml:space="preserve">
+    <value>Login naam</value>
+  </data>
+  <data name="tbDefaultCarID" xml:space="preserve">
+    <value>Wagen ID</value>
+  </data>
+  <data name="tbDefaultPassword" xml:space="preserve">
+    <value>Paswoord</value>
+  </data>
+  <data name="cpResources" xml:space="preserve">
+    <value>Middelen</value>
+  </data>
+  <data name="Present" xml:space="preserve">
+    <value>Aanwezig</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Afwezig</value>
+  </data>
+  <data name="lblCaption" xml:space="preserve">
+    <value>Bijschrift</value>
+  </data>
+  <data name="enCaption" xml:space="preserve">
+    <value>Bijschrift</value>
+  </data>
+  <data name="lblPriority" xml:space="preserve">
+    <value>Prioriteit</value>
+  </data>
+  <data name="enPriority" xml:space="preserve">
+    <value>Prioriteit</value>
+  </data>
+  <data name="lblOnReport" xml:space="preserve">
+    <value>Toon op rapport</value>
+  </data>
+  <data name="lblPicture" xml:space="preserve">
+    <value>Bevat foto</value>
+  </data>
+  <data name="lblRegistration" xml:space="preserve">
+    <value>Registratie</value>
+  </data>
+  <data name="itemAdd" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="CaptionIsEmpty" xml:space="preserve">
+    <value>Bijschrift is leeg</value>
+  </data>
+  <data name="lblgOnReport" xml:space="preserve">
+    <value>Op rapport</value>
+  </data>
+  <data name="lblgIsReadOnly" xml:space="preserve">
+    <value>Alleen lezen</value>
+  </data>
+  <data name="lblgPriority" xml:space="preserve">
+    <value>Prioriteit</value>
+  </data>
+  <data name="lblgDate" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="lblgRegistration" xml:space="preserve">
+    <value>Registratie</value>
+  </data>
+  <data name="btnInput" xml:space="preserve">
+    <value>Toon selectie</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Verwijder registratie</value>
+  </data>
+  <data name="btnTakePicture" xml:space="preserve">
+    <value>Neem foto</value>
+  </data>
+  <data name="piInput" xml:space="preserve">
+    <value>Maak een selectie ...</value>
+  </data>
+  <data name="NoCameraTitle" xml:space="preserve">
+    <value>Geen camera</value>
+  </data>
+  <data name="NoCameraText" xml:space="preserve">
+    <value>:( Geen camera beschikbaar.</value>
+  </data>
+  <data name="CameraFailed" xml:space="preserve">
+    <value>Camera heeft gefaald</value>
+  </data>
+  <data name="cpPlanningList" xml:space="preserve">
+    <value>Planning lijst</value>
+  </data>
+  <data name="itemRefresh" xml:space="preserve">
+    <value>Vernieuwen</value>
+  </data>
+  <data name="lblProgressRegistrations" xml:space="preserve">
+    <value>Laden van de registraties</value>
+  </data>
+  <data name="lblProgressPlanning" xml:space="preserve">
+    <value>Laden van de planning</value>
+  </data>
+  <data name="btnStatusChange" xml:space="preserve">
+    <value>Status verandering</value>
+  </data>
+  <data name="btnRegistrations" xml:space="preserve">
+    <value>Registraties</value>
+  </data>
+  <data name="btnInfo" xml:space="preserve">
+    <value>Planning informatie</value>
+  </data>
+  <data name="btnArticles" xml:space="preserve">
+    <value>Artikelen</value>
+  </data>
+  <data name="btnResources" xml:space="preserve">
+    <value>Personen</value>
+  </data>
+  <data name="lbStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tbUserName" xml:space="preserve">
+    <value>Gebruikersnaam</value>
+  </data>
+  <data name="tbCar" xml:space="preserve">
+    <value>Wagen ID</value>
+  </data>
+  <data name="tbPassword" xml:space="preserve">
+    <value>Paswoord</value>
+  </data>
+  <data name="btnLoginGo" xml:space="preserve">
+    <value>Ga</value>
+  </data>
+  <data name="cpLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="SummaryTitle" xml:space="preserve">
+    <value>Samenvatting</value>
+  </data>
+  <data name="InstructionsTitle" xml:space="preserve">
+    <value>Instructies</value>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Informatie</value>
+  </data>
+  <data name="OrderInfo" xml:space="preserve">
+    <value>Order informatie</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Klant</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Wagen</value>
+  </data>
+  <data name="Technician" xml:space="preserve">
+    <value>Technicus</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Referentie</value>
+  </data>
+  <data name="Alias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start tijd</value>
+  </data>
+  <data name="StopTime" xml:space="preserve">
+    <value>Stop tijd</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Beschrijving</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Opmerkingen</value>
+  </data>
+  <data name="CustomerInfo" xml:space="preserve">
+    <value>Klant informatie</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PhoneNr" xml:space="preserve">
+    <value>Telefoon nr</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Straat</value>
+  </data>
+  <data name="HouseNr" xml:space="preserve">
+    <value>Huisnr</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Stad</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="Technicians" xml:space="preserve">
+    <value>Technici</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Bestuurder</value>
+  </data>
+  <data name="InGroup" xml:space="preserve">
+    <value>In groep</value>
+  </data>
+  <data name="InstallationReport" xml:space="preserve">
+    <value>Installatie rapport</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Pauze" xml:space="preserve">
+    <value>Pauze</value>
+  </data>
+  <data name="TechCount" xml:space="preserve">
+    <value>Aantal technici</value>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>Registratie informatie</value>
+  </data>
+  <data name="ReadInstructionsFirst" xml:space="preserve">
+    <value>LEES EERST INSTRUCTIES</value>
+  </data>
+  <data name="ArticleUsage" xml:space="preserve">
+    <value>Artikel gebruik</value>
+  </data>
+  <data name="ArticleNr" xml:space="preserve">
+    <value>Artikel nr</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Hoeveelheid</value>
+  </data>
+  <data name="tbArticleID" xml:space="preserve">
+    <value>artikel nr</value>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Scan licentiecode</value>
+  </data>
+  <data name="tbQty" xml:space="preserve">
+    <value>hoeveelheid</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Toevoegen</value>
+  </data>
+  <data name="itemSearch" xml:space="preserve">
+    <value>Zoeken</value>
+  </data>
+  <data name="ScanBarcode" xml:space="preserve">
+    <value>Scan barcode</value>
+  </data>
+  <data name="EnterValidArticleNr" xml:space="preserve">
+    <value>Geef een geldig artikel nummer in</value>
+  </data>
+  <data name="EnterValidQty" xml:space="preserve">
+    <value>Geef een geldige hoeveelheid in</value>
+  </data>
+  <data name="DeleteArticle" xml:space="preserve">
+    <value>Verwijder artikel</value>
+  </data>
+  <data name="cpArticle" xml:space="preserve">
+    <value>Selecteer artikel</value>
+  </data>
+  <data name="cpArtGroup" xml:space="preserve">
+    <value>Selecteer artikel groep</value>
+  </data>
+  <data name="cpActivationPage" xml:space="preserve">
+    <value>Licentie Activatie</value>
+  </data>
+  <data name="lblLicenseKey" xml:space="preserve">
+    <value>Licentie code :</value>
+  </data>
+  <data name="tbLicenseKey" xml:space="preserve">
+    <value>Geef licentiecode hier in of klik op scan</value>
+  </data>
+  <data name="btnActiveLicense" xml:space="preserve">
+    <value>Activeer licentie</value>
+  </data>
+  <data name="btnMissing" xml:space="preserve">
+    <value>Geen licentiecode ?</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Geef e-mail adres in om een licentie aan te vragen</value>
+  </data>
+  <data name="tbEmail" xml:space="preserve">
+    <value>E-mail adres</value>
+  </data>
+  <data name="btnEmail" xml:space="preserve">
+    <value>Vraag licentiecode aan</value>
+  </data>
+  <data name="ScanLicenseCode" xml:space="preserve">
+    <value>Scan licentiecode</value>
+  </data>
+  <data name="LicenseRequested" xml:space="preserve">
+    <value>Licentie aanvraag KLAAR</value>
+  </data>
+  <data name="cpAbout" xml:space="preserve">
+    <value>Over</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Revision" xml:space="preserve">
+    <value>Revisie</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Waarschuwing</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fout</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Vraag</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuleer</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Verwijder</value>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>Geen netwerk connectie beschibkaar</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Artikelen</value>
+  </data>
+  <data name="MissingSignature" xml:space="preserve">
+    <value>Handtekening ontbreekt</value>
+  </data>
+  <data name="NotAllRequiredRegistrationsProcessed" xml:space="preserve">
+    <value>Niet alle verplichte registraties zijn uitgevoerd. Status wijziging enkel mogelijk als alle verplichte registraties zijn uitgevoerd.</value>
+  </data>
+  <data name="NextStatus" xml:space="preserve">
+    <value>Volgende status</value>
+  </data>
+  <data name="Scanning" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="btnClearTables" xml:space="preserve">
+    <value>Database leegmaken</value>
+  </data>
+  <data name="tbsData" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="txtTablesCleared" xml:space="preserve">
+    <value>Database is leeggemaakt.</value>
+  </data>
+</root>

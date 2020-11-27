@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="MobRegPro.LoginPage" 
+  xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro">
+  <ContentPage.Content>
+    <StackLayout Padding="30,20,30,0">
+<!--       <StackLayout Orientation="Horizontal" > 
+     	<Image x:Name="imgOK" Source="{local:ImageResourceExtention MobRegPro.Images.login.png}" HorizontalOptions="Start" VerticalOptions="Start" Aspect="AspectFit"/>
+      	<Label x:Name="lbTitle" Text="Enter credentials" Style="{DynamicResource TitleStyle}" VerticalOptions="Center" HorizontalOptions="Start" /> 
+ -->
+      <StackLayout Padding="0,20,0,0" >
+	      <Entry x:Name="tbUserName" Placeholder="{local:Translate tbUserName}" Keyboard="Text"/>
+	      <Entry x:Name="tbCar" Placeholder="{local:Translate tbCar}" Keyboard="Text"/>
+	      <Entry x:Name="tbPassword" Placeholder="{local:Translate tbPassword}" IsPassword="true" Keyboard="Text"/>
+	      <Button x:Name="BtnLogin" Text="{local:Translate btnLoginGo}" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnLoginClicked"></Button>
+      	  <ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center"/>
+      </StackLayout>
+
+    </StackLayout>
+   
+  </ContentPage.Content>
+</ContentPage>

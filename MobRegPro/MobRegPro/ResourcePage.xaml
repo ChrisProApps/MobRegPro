@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+  xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+	 x:Class="MobRegPro.ResourcePage"
+  Title="{local:Translate cpResources}">
+	<ContentPage.Content>
+		<StackLayout Padding="5,20,5,0">
+
+			<ListView x:Name="lvResources" SeparatorColor="White" RowHeight="72" ItemTapped="ItemTapped">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<ViewCell.View>
+								<StackLayout Orientation="Horizontal" BackgroundColor="#C4C4C4" Padding="5,5,0,4">
+				      				<StackLayout.HeightRequest>
+				      					<!-- sys:Double requires adding => xmlns:sys="clr-namespace:System;assembly=mscorlib" -->
+					      				<OnPlatform x:TypeArguments="sys:Double" iOS="72" Android="72" WinPhone="72"/>
+				      				</StackLayout.HeightRequest>
+				      					<Image Source="{Binding DriverImage}" Aspect="AspectFit" />
+				      					<Image Source="{Binding SeparateImage}" Aspect="AspectFit" />
+					      				<StackLayout Padding="5,5,5,5">
+					      					<Label Text="{Binding FriendlyName}" LineBreakMode="TailTruncation"  TextColor="Black"/>
+					      					<Label Text="{Binding IsPresentText}" VerticalOptions="Center" TextColor="Red"/>
+					    				</StackLayout>
+				      				</StackLayout>
+
+							</ViewCell.View>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

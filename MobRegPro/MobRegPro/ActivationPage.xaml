@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro" 
+x:Class="MobRegPro.ActivationPage"
+Title="{local:Translate cpActivationPage}">
+	<ContentPage.Content>
+		<StackLayout Padding="5,20,5,20">
+			<StackLayout x:Name="licensePanel" IsVisible="true">
+                <Label Text="{local:Translate lblLicenseKey}" FontAttributes="Bold"/>
+                <Entry x:Name="tbLicenseKey" Placeholder = "{local:Translate tbLicenseKey}" HorizontalOptions="FillAndExpand"/>
+			 	<StackLayout x:Name="LayoutButtons" Padding="30,20,30,0">
+			 		<ActivityIndicator x:Name="activityIndicator" IsVisible="false" VerticalOptions="Center"/>
+                    <Button x:Name="BtnScan" Text="{local:Translate btnScan}" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnScanClicked"></Button>
+                    <Button x:Name="BtnActivate" Text="{local:Translate btnActiveLicense}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnActivateClicked"></Button>
+<!--			 		<StackLayout Padding="0,30,0,0"/>-->
+                    <Button x:Name="BtnMissing" Text="{local:Translate btnMissing}" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnMissingClicked"></Button>
+			 	</StackLayout>
+			</StackLayout>
+
+			<StackLayout x:Name="emailPanel" IsVisible="false">
+                <Label Text="{local:Translate lblEmail}" FontAttributes="Bold"/>
+                <Entry x:Name="tbEmail" Placeholder="{local:Translate tbEmail}" HorizontalOptions="FillAndExpand" Keyboard="Email"/>
+				<StackLayout Padding="30,20,30,0">
+			 		<ActivityIndicator x:Name="activityIndicator2" IsVisible="false" VerticalOptions="Center"/>
+                    <Button x:Name="BtnEmail" Text="{local:Translate btnEmail}" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnEmailClicked"></Button>
+			 	</StackLayout>
+			</StackLayout>
+
+
+		</StackLayout>
+		
+
+	</ContentPage.Content>
+</ContentPage>

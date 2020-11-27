@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobRegPro.AboutPage" 
+	xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro" 
+	Title="{local:Translate cpAbout}"
+	BackgroundColor="White">
+	<ContentPage.Content>
+		<StackLayout Padding="5,20,5,20">
+			<Label x:Name="lbRevsion" FontSize="24" TextColor="#0080FF" HorizontalOptions="Center"/>
+			<BoxView HeightRequest="20"/>
+			<Label Text="Copyright © ProApps 2015-2020" FontFamily="Bold" HorizontalOptions="Center"/>
+			<BoxView HeightRequest="20"/>
+			<Image x:Name="imgLogo" Source="{local:ImageResourceExtention MobRegPro.Images.ProApps.png}" Aspect="AspectFit" IsVisible="false"/>
+			<BoxView HeightRequest="10"/>
+			<WebView x:Name="webView" WidthRequest="1000" HeightRequest="400"/>
+			
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>

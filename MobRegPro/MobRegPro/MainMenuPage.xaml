@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+             x:Class="MobRegPro.MainMenuPage">
+<!--  <Label Text="MainMenu" Style="{DynamicResource TitleStyle}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+<StackLayout>
+	<StackLayout x:Name="panelStatus" Orientation="Horizontal" Padding="10,25,10,25" MinimumHeightRequest="100" Spacing="30">
+		<Image x:Name="imgStatus" Aspect="AspectFit"/>
+		<StackLayout>
+			<Label x:Name="lbStatus" Style="{DynamicResource TitleStyle}" TextColor="White"/>
+			<Label x:Name="lbStatusTime" TextColor="White"/>
+		</StackLayout>
+	</StackLayout>
+
+	<ScrollView>
+	  <StackLayout x:Name="buttonsPanel" Padding="50,30,50,30" HorizontalOptions="Center"> 
+      <Button x:Name="BtnStatusChange" HeightRequest="70" WidthRequest="200"  Image="Images/status.png" HorizontalOptions="StartAndExpand" ContentLayout="Left,10" Text="{local:Translate btnStatusChange}" BackgroundColor="Gray" TextColor="White" Clicked="BtnStatusChangeClicked" />
+      <Button x:Name="BtnRegistrations"  HeightRequest="70" WidthRequest="200" Image="Images/registrations.png" ContentLayout="Left,10" Text="{local:Translate btnRegistrations}" BackgroundColor="Gray" TextColor="White" Clicked="BtnRegistrationsClicked" />
+      <Button x:Name="BtnInfo" HeightRequest="70" WidthRequest="200"  Image="Images/info.png" ContentLayout="Left,10" Text="{local:Translate btnInfo}" BackgroundColor="Gray" TextColor="White" Clicked="BtnInfoClicked" />
+      <Button x:Name="BtnArticles" HeightRequest="70" WidthRequest="200" Image="Images/articles.png" ContentLayout="Left,10" Text="{local:Translate btnArticles}"  BackgroundColor="Gray" HorizontalOptions="StartAndExpand" TextColor="White" Clicked="BtnArticlesClicked" />
+      <Button x:Name="BtnResources" HeightRequest="70" WidthRequest="200" Image="Images/multiuser.png" ContentLayout="Left,10" Text="{local:Translate btnResources}"  BackgroundColor="Gray" HorizontalOptions="StartAndExpand" TextColor="White" Clicked="BtnResourcesClicked" />
+    </StackLayout>
+	</ScrollView>
+
+</StackLayout>
+
+</ContentPage>

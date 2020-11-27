@@ -1,0 +1,66 @@
+﻿Rev 1.0.1
+
+PlanningSummaryPage.cs
+	Problem : 
+		object not set to a reference App wakes up
+	Idea :
+		some large items cleaned up, could be db
+	Soltution : 
+		Added set db = App.dbHandler.db
+
+	StartPage.cs
+		Problem :
+			Property.tmp sharing... 
+		Idea :
+			Saving properties conflicting with auto saving
+		Solution :
+			BtnLoginClicked(...)
+				Removed : await App.SaveAllPropertiesAsync();
+
+
+Rev 1.0.3
+	Introduced ApplicationSettings class to store all settings
+		is persisted in database table Setting, record with ID="MobRegPro" defined in Constants class, Constants.ApplicationID
+		There was a problem on iOS 9.3 or in Xamarin to persist the settings in de App.Current object
+		Method : 
+		- ApplicationSettings class is instantiated as static object, referenced as App.appSettings
+		- Is converted to json when added to database in stored into field Setting.Content
+
+Rev 1.0.3.1
+	Android : problem with storing in 'MySettings'
+		was : private bool appSettingsUseDatabaseStore = false;
+		is  : private bool appSettingsUseDatabaseStore = true;
+
+Rev 1.0.4
+	MobRegPro StatusChangePage.cs
+		PrepareStatusChange(...)
+			when start is next status, if nothing to display before start, the status change to start can not be done since PerformStatusChange(...) isnt't called
+			solution : else statement added
+
+			if (regsCount > 0) {...}
+			// else statement added
+			else await PerformStatusChange (selectedStatusID);
+Rev 1.0.5
+	Changes to work with iOS10, Android 7
+
+Rev 1.0.6
+	Localize App
+
+Rev 1.0.7
+	Updated for XamarinForms rev > 3
+	Prepared for VS2015/7 compilation
+	
+Rev 1.0.8
+    Multilingual version :
+    - Added resources
+    - Included resources in XAML and cs files
+    
+Rev 1.0.8.1
+    - MainMenuPage :only for iOS formatted text of buttons to align text, added ContentAlignment (Left, 10)
+    - SignatureForm :  for iOS exclude scrollview, else signing is not possible since view moves up/down
+    - for iOS signing use :
+        - Signing Identity : Developper : Chris Bel (28L5234CGC) 
+        - Provisioning Profile : Automatic
+        - make sure first to add the device, to the developper profile using Apple Member Center :
+            - Provisioning Profiles >  Development
+                MobRegPro_iOSDevelopment : link all certificates (since you can not see to which MAC this belongs) to devices 

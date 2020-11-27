@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DemoLicenseActivated" xml:space="preserve">
+    <value>Demo license activated</value>
+    <comment>StartPage.cs</comment>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Start</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnAbout" xml:space="preserve">
+    <value>About</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnSettings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnActivate" xml:space="preserve">
+    <value>Activate</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="lbProgress" xml:space="preserve">
+    <value>Starting...</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="tbName" xml:space="preserve">
+    <value>Contact name :</value>
+    <comment>SignaturePage.xaml</comment>
+  </data>
+  <data name="tbMail" xml:space="preserve">
+    <value>Contact email :</value>
+    <comment>SignaturePage.xaml</comment>
+  </data>
+  <data name="padViewPrompt" xml:space="preserve">
+    <value>Sign here</value>
+    <comment>SignaturePage.xaml</comment>
+  </data>
+  <data name="padViewClear" xml:space="preserve">
+    <value>Clear</value>
+    <comment>SignaturePage.xaml</comment>
+  </data>
+  <data name="itemSummary" xml:space="preserve">
+    <value>Summary</value>
+    <comment>SignaturePage.cs</comment>
+  </data>
+  <data name="SignatureTooLong" xml:space="preserve">
+    <value>Signature too large. Will not be stored.</value>
+    <comment>SignaturePage.cs</comment>
+  </data>
+  <data name="cpSettings" xml:space="preserve">
+    <value>Settings</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="tbsTitle" xml:space="preserve">
+    <value>Default credentials</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="swDefaultInUse" xml:space="preserve">
+    <value>Use defaults</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="tbDefaultUsername" xml:space="preserve">
+    <value>Login name</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="tbDefaultCarID" xml:space="preserve">
+    <value>Car ID</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="tbDefaultPassword" xml:space="preserve">
+    <value>Password</value>
+    <comment>SettingsPage.xaml</comment>
+  </data>
+  <data name="cpResources" xml:space="preserve">
+    <value>Resources</value>
+    <comment>ResourcePage.xaml</comment>
+  </data>
+  <data name="Present" xml:space="preserve">
+    <value>Present</value>
+    <comment>ResourcePage.cs, InfoPage.cs</comment>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Absent</value>
+    <comment>ResourcePage.cs</comment>
+  </data>
+  <data name="lblCaption" xml:space="preserve">
+    <value>Caption</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="enCaption" xml:space="preserve">
+    <value>Caption</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="lblPriority" xml:space="preserve">
+    <value>Priority</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="enPriority" xml:space="preserve">
+    <value>Caption</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="lblOnReport" xml:space="preserve">
+    <value>Show on report</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="lblPicture" xml:space="preserve">
+    <value>Contains picture</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="lblRegistration" xml:space="preserve">
+    <value>Registration</value>
+    <comment>RegSummaryPage.xaml</comment>
+  </data>
+  <data name="itemAdd" xml:space="preserve">
+    <value>Add</value>
+    <comment>RegSummaryPage.cs</comment>
+  </data>
+  <data name="CaptionIsEmpty" xml:space="preserve">
+    <value>Caption is empty</value>
+    <comment>RegSummaryPage.cs</comment>
+  </data>
+  <data name="lblgOnReport" xml:space="preserve">
+    <value>On report</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="lblgIsReadOnly" xml:space="preserve">
+    <value>Read only</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="lblgPriority" xml:space="preserve">
+    <value>Priority</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="lblgDate" xml:space="preserve">
+    <value>Date</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="lblgRegistration" xml:space="preserve">
+    <value>Registration</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="btnInput" xml:space="preserve">
+    <value>Show selection</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete registration</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="btnTakePicture" xml:space="preserve">
+    <value>Take picture</value>
+    <comment>RegEditPage.xaml</comment>
+  </data>
+  <data name="piInput" xml:space="preserve">
+    <value>Make selection ...</value>
+    <comment>RegEditPage.cs</comment>
+  </data>
+  <data name="NoCameraTitle" xml:space="preserve">
+    <value>No Camera</value>
+    <comment>RegEditPage.cs</comment>
+  </data>
+  <data name="NoCameraText" xml:space="preserve">
+    <value>:( No camera available.</value>
+    <comment>RegEditPage.cs</comment>
+  </data>
+  <data name="CameraFailed" xml:space="preserve">
+    <value>Camera failed</value>
+    <comment>RegEditPage.cs</comment>
+  </data>
+  <data name="cpPlanningList" xml:space="preserve">
+    <value>Planning list</value>
+    <comment>PlanningListPage.cs</comment>
+  </data>
+  <data name="itemRefresh" xml:space="preserve">
+    <value>Refresh</value>
+    <comment>PlanningListPage.cs</comment>
+  </data>
+  <data name="lblProgressRegistrations" xml:space="preserve">
+    <value>Loading registrations</value>
+    <comment>PlanningListPage.cs</comment>
+  </data>
+  <data name="lblProgressPlanning" xml:space="preserve">
+    <value>Loading planning</value>
+    <comment>PlanningListPage.cs</comment>
+  </data>
+  <data name="btnStatusChange" xml:space="preserve">
+    <value>Status change</value>
+    <comment>MainMenuPage.xaml</comment>
+  </data>
+  <data name="btnRegistrations" xml:space="preserve">
+    <value>Registrations</value>
+    <comment>MainMenuPage.xaml</comment>
+  </data>
+  <data name="btnInfo" xml:space="preserve">
+    <value>Planning info</value>
+    <comment>MainMenuPage.xaml</comment>
+  </data>
+  <data name="btnArticles" xml:space="preserve">
+    <value>Articles</value>
+    <comment>MainMenuPage.xaml</comment>
+  </data>
+  <data name="btnResources" xml:space="preserve">
+    <value>Resources</value>
+    <comment>MainMenuPage.xaml</comment>
+  </data>
+  <data name="lbStatus" xml:space="preserve">
+    <value>Status</value>
+    <comment>MainMenuPage.cs</comment>
+  </data>
+  <data name="tbUserName" xml:space="preserve">
+    <value>Username</value>
+    <comment>LoginPage.xaml</comment>
+  </data>
+  <data name="tbCar" xml:space="preserve">
+    <value>Car ID</value>
+    <comment>LoginPage.xaml</comment>
+  </data>
+  <data name="tbPassword" xml:space="preserve">
+    <value>Password</value>
+    <comment>LoginPage.xaml</comment>
+  </data>
+  <data name="btnLoginGo" xml:space="preserve">
+    <value>Go</value>
+    <comment>LoginPage.xaml</comment>
+  </data>
+  <data name="cpLogin" xml:space="preserve">
+    <value>Login</value>
+    <comment>LoginPage.cs</comment>
+  </data>
+  <data name="SummaryTitle" xml:space="preserve">
+    <value>Summary</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="InstructionsTitle" xml:space="preserve">
+    <value>Instructions</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Information</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="OrderInfo" xml:space="preserve">
+    <value>Order info</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Car</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Technician" xml:space="preserve">
+    <value>Technician</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Reference</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Alias" xml:space="preserve">
+    <value>Alias</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start time</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="StopTime" xml:space="preserve">
+    <value>Stop time</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Technician</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="CustomerInfo" xml:space="preserve">
+    <value>Customer info</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="PhoneNr" xml:space="preserve">
+    <value>Phone nr</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Street</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="HouseNr" xml:space="preserve">
+    <value>House nr</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Zipcode</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Technicians" xml:space="preserve">
+    <value>Technician(s)</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Driver</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="InGroup" xml:space="preserve">
+    <value>In group</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="InstallationReport" xml:space="preserve">
+    <value>Installation report</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Pauze" xml:space="preserve">
+    <value>Pauze</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="TechCount" xml:space="preserve">
+    <value>Tech count</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>Registration info</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="ReadInstructionsFirst" xml:space="preserve">
+    <value>READ INSTRUCTIONS FIRST</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="ArticleUsage" xml:space="preserve">
+    <value>Article usage</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="ArticleNr" xml:space="preserve">
+    <value>Article nr</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Qty</value>
+    <comment>InfoPage.cs</comment>
+  </data>
+  <data name="tbArticleID" xml:space="preserve">
+    <value>article nr</value>
+    <comment>ArtSummaryPage.xaml</comment>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Scan license key</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="tbQty" xml:space="preserve">
+    <value>qty</value>
+    <comment>ArtSummaryPage.xaml</comment>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+    <comment>ArtSummaryPage.xaml</comment>
+  </data>
+  <data name="itemSearch" xml:space="preserve">
+    <value>Search</value>
+    <comment>ArtSummaryPage.cs</comment>
+  </data>
+  <data name="ScanBarcode" xml:space="preserve">
+    <value>Scan barcode</value>
+    <comment>ArtSummaryPage.cs</comment>
+  </data>
+  <data name="EnterValidArticleNr" xml:space="preserve">
+    <value>Enter valid article number</value>
+    <comment>ArtSummaryPage.cs</comment>
+  </data>
+  <data name="EnterValidQty" xml:space="preserve">
+    <value>Enter valid quantity</value>
+    <comment>ArtSummaryPage.cs</comment>
+  </data>
+  <data name="DeleteArticle" xml:space="preserve">
+    <value>Delete article</value>
+    <comment>ArtSummaryPage.cs</comment>
+  </data>
+  <data name="cpArticle" xml:space="preserve">
+    <value>Select article</value>
+    <comment>ArticlePage.cs</comment>
+  </data>
+  <data name="cpArtGroup" xml:space="preserve">
+    <value>Select article group</value>
+    <comment>ArtGroupPage.cs</comment>
+  </data>
+  <data name="cpActivationPage" xml:space="preserve">
+    <value>License Activation</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="lblLicenseKey" xml:space="preserve">
+    <value>License key : </value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="tbLicenseKey" xml:space="preserve">
+    <value>Enter license key here or press scan</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="btnActiveLicense" xml:space="preserve">
+    <value>Activate license</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="btnMissing" xml:space="preserve">
+    <value>No license key ?</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Enter email address to request license</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="tbEmail" xml:space="preserve">
+    <value>Email adddress</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="btnEmail" xml:space="preserve">
+    <value>Request licensekey</value>
+    <comment>ActicationPage.xaml</comment>
+  </data>
+  <data name="ScanLicenseCode" xml:space="preserve">
+    <value>Scan license code</value>
+    <comment>Actication.cs</comment>
+  </data>
+  <data name="LicenseRequested" xml:space="preserve">
+    <value>License requested DONE</value>
+    <comment>Actication.cs</comment>
+  </data>
+  <data name="cpAbout" xml:space="preserve">
+    <value>About</value>
+    <comment>About.xaml</comment>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+    <comment>About.cs</comment>
+  </data>
+  <data name="Revision" xml:space="preserve">
+    <value>Revision</value>
+    <comment>About.cs</comment>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+    <comment>General text</comment>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Warning</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>General text</comment>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>No network connection available</value>
+    <comment>General text</comment>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articles</value>
+    <comment>ArticlePage.cs</comment>
+  </data>
+  <data name="MissingSignature" xml:space="preserve">
+    <value>Missing signature input</value>
+  </data>
+  <data name="NotAllRequiredRegistrationsProcessed" xml:space="preserve">
+    <value>Not all required registrations processed. Complete registrations before status change is allowed.</value>
+  </data>
+  <data name="NextStatus" xml:space="preserve">
+    <value>Next status</value>
+  </data>
+  <data name="Scanning" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="btnClearTables" xml:space="preserve">
+    <value>Empty database</value>
+    <comment>SettingsPage</comment>
+  </data>
+  <data name="tbsData" xml:space="preserve">
+    <value>Data</value>
+    <comment>SettingsPage</comment>
+  </data>
+  <data name="txtTablesCleared" xml:space="preserve">
+    <value>Database is cleared.</value>
+    <comment>SettingsPage</comment>
+  </data>
+</root>

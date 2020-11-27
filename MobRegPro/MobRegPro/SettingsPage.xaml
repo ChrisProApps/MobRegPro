@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+  x:Class="MobRegPro.SettingsPage"
+  Title="{local:Translate cpSettings}">
+
+    <ContentPage.Content>
+        <StackLayout Padding="5,20,5,0">
+            <TableView Intent="Settings">
+                <TableRoot>
+
+                    <TableSection Title="{local:Translate tbsTitle}">
+                        <SwitchCell x:Name="swDefaultInUse" Text="{local:Translate swDefaultInUse}" />
+                        <EntryCell x:Name="tbDefaultUserName" Placeholder="{local:Translate tbDefaultUsername}"/>
+                        <EntryCell x:Name="tbDefaultCarID" Placeholder="{local:Translate tbDefaultCarID}" />
+                        <EntryCell x:Name="tbDefaultPassword" Placeholder="{local:Translate tbDefaultPassword}" Text="" />
+                    </TableSection>
+
+                    <TableSection Title="{local:Translate tbsData}" >
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" Margin="30,0,30,0">
+                                    <Button x:Name="BtnClearTables" Text = "{local:Translate btnClearTables}" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnClearTables_Clicked" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+
+        </StackLayout>
+    </ContentPage.Content>
+ </ContentPage>

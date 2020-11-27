@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+  x:Class="MobRegPro.RegEditPage">
+	<ContentPage.Content>
+	<ScrollView>
+		<StackLayout x:Name="panelMain" Padding="10,10,10,00">
+			<Label Text="{Binding Caption}" Style="{DynamicResource TitleStyle}" MinimumHeightRequest="50" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White"/>
+
+			<Grid Padding="0,10,0,0">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="10"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+			
+				<Label Grid.Row="0" Grid.Column="0" Text="{local:Translate lblgOnReport}" FontAttributes="Bold" HorizontalOptions="End"/>
+				<Switch Grid.Row="0" Grid.Column="2" x:Name="swOnReport" IsToggled="{Binding IsOnReport, Mode=TwoWay}" HorizontalOptions="Start"/>
+				<Label Grid.Row="1" Grid.Column="0" Text="{local:Translate lblgIsReadOnly}" FontAttributes="Bold" HorizontalOptions="End"/>
+				<Switch Grid.Row="1" Grid.Column="2" x:Name="swIsReadOnly" IsToggled="{Binding IsReadingOnly, Mode=TwoWay}}" HorizontalOptions="Start"/>
+				<Label Grid.Row="2" Grid.Column="0" Text="{local:Translate lblgPriority}" FontAttributes="Bold" HorizontalOptions="End"/>
+				<Entry Grid.Row="2" Grid.Column="2" x:Name="enPriority" Text="{Binding Priority, Mode=TwoWay}" Keyboard="Numeric" HorizontalOptions="Start"/>
+				<Label Grid.Row="3" Grid.Column="0" Text="{local:Translate lblgDate}" FontAttributes="Bold" HorizontalOptions="End"/>
+				<Label Grid.Row="3" Grid.Column="2" Text="{Binding Date, StringFormat='{0:HH:mm:ss dd/MM/yyyy}'}" HorizontalOptions="Start"/>
+				<Label Grid.Row="4" Grid.Column="0" Text="{local:Translate lblgRegistration}" FontAttributes="Bold" HorizontalOptions="End"/>
+				<Label Grid.Row="4" Grid.Column="2" x:Name="lbChoice" IsVisible = "false" HorizontalOptions="Start"/>
+			</Grid>
+			<Editor x:Name="edResult" IsVisible="false" Text="{Binding Result}" HorizontalOptions="FillAndExpand" HeightRequest="200">
+<!--						<Editor.BackgroundColor>
+		                    <OnPlatform x:TypeArguments="x:Color"
+		                        iOS="#a4eaff"
+		                        Android="#2c3e50"
+		                        WinPhone="#2c3e50" />
+	                	</Editor.BackgroundColor>-->
+			</Editor>
+			<Image x:Name="imgPicture" Aspect="AspectFit" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+			<StackLayout Padding="50,0,50,0">
+				<Button x:Name="BtnInput" Text="{local:Translate btnInput}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnInputClicked"></Button>
+      			<Button x:Name="BtnDelete" Text="{local:Translate btnDelete}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnDeleteClicked"></Button>
+      			<Button x:Name="BtnTakePicture" Text="{local:Translate btnTakePicture}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnTakePictureClicked"></Button>
+ 			
+ 			</StackLayout>
+
+			<Picker x:Name="piInput" IsVisible="false" BackgroundColor="Gray" VerticalOptions="CenterAndExpand">
+			</Picker>
+				
+		</StackLayout>
+
+	</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

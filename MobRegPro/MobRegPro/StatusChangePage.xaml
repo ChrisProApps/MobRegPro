@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+    x:Class="MobRegPro.StatusChangePage">
+	<ContentPage.Content>
+		<StackLayout Padding = "0,0,0,0">
+
+		<StackLayout x:Name="panelStatus" Orientation="Horizontal" Padding="10,25,10,25" MinimumHeightRequest="100" Spacing="10">
+			<Image x:Name="imgStatus" Aspect="AspectFit"/>
+			<StackLayout>
+				<Label x:Name="lbStatus" Style="{DynamicResource TitleStyle}" TextColor="White"/>
+				<Label x:Name="lbStatusTime" TextColor="White"/>
+			</StackLayout>
+		</StackLayout>
+
+		<StackLayout Orientation = "Horizontal">
+			<Label Text="{local:Translate NextStatus}" Style="{DynamicResource TitleStyle}"/>
+			<ActivityIndicator x:Name="activityIndicator" VerticalOptions="Center" IsVisible="false" IsRunning="false"/>
+		</StackLayout>
+
+		<ListView x:Name="lvStatus" RowHeight="75" SeparatorColor="White">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+				 	<ViewCell>
+		      			 <ViewCell.View>
+			      			<StackLayout Spacing="6">
+
+				      				<StackLayout Orientation="Horizontal" BackgroundColor="#C4C4C4" Padding="5,10,0,10">
+				      					<Image Source="{Binding iconBlack, StringFormat='Images/{0}' }" Aspect="AspectFit" />
+					      				<StackLayout Padding="5,5,5,5">
+					  	      				<Label Text="{Binding Text}" VerticalOptions="Center" Style="{DynamicResource TitleStyle}"  TextColor="Black"/>
+					    				</StackLayout>
+				      				</StackLayout>
+				      		
+			      			</StackLayout>
+			      		
+		      			 </ViewCell.View>
+      				</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>

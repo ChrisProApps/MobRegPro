@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="MobRegPro.StartPage"
+	xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro">
+<!--	<ContentPage.BackgroundColor>
+		<OnPlaform x:TypeArguments="Color"
+			ios="White"
+			Android="White"
+			WinPhone="White"
+		/>
+	</ContentPage.BackgroundColor>-->
+	<ContentPage.Content>
+		<StackLayout Padding="5,20,5,20">
+		   <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="iOS" Value="0, 40, 0, 0" />
+                    <On Platform="Android,UWP" Value="0, 40, 0, 0" />
+                </OnPlatform>
+            </StackLayout.Margin>
+			 <Image Source="{local:ImageResourceExtention MobRegPro.Images.ProApps.png}" Aspect="AspectFit" />
+			 <Label x:Name="lbDemo" TextColor="#0080FF" IsVisible = "false" HorizontalOptions="CenterAndExpand"/>
+			 <StackLayout x:Name="statusPanel"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand" IsVisible="false" Padding="10,5,10,5">
+      			<ActivityIndicator x:Name="activityIndicator" IsRunning="true" VerticalOptions="Center"  HorizontalOptions="Start"/>
+      			<Label x:Name="lbProgress" Text="{local:Translate lbProgress}" TextColor="Black" FontAttributes="Bold" FontSize="15" VerticalOptions="Center"/>
+       </StackLayout>
+      <StackLayout Padding="30,10,30,0">
+        <Button x:Name="BtnActivate" Text="{local:Translate btnActivate}" IsVisible="False" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnActivateClicked"></Button>
+      </StackLayout>
+			 <ScrollView>
+         <StackLayout x:Name="LayoutButtons" Padding="30,20,30,0">
+			 	  <Button x:Name="BtnLogin" Text="{local:Translate btnLogin}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnLoginClicked"></Button>
+			 	  <Button x:Name="BtnAbout" Text="{local:Translate btnAbout}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnAboutClicked"></Button>
+			 	  <Button x:Name="BtnSettings" Text="{local:Translate btnSettings}" IsVisible="false" HorizontalOptions="FillAndExpand" BackgroundColor="Gray" TextColor="White" Clicked="BtnSettingsClicked"></Button>
+			  </StackLayout>
+			 </ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

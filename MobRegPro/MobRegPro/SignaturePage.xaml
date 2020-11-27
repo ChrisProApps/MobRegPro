@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+    xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+	x:Class="MobRegPro.SignaturePage">
+
+	<ContentPage.Content>
+
+		<ScrollView x:Name="svMain">
+    		<StackLayout x:Name="slMain" Padding="5,0,5,0">
+    			<Label Text="{local:Translate tbName}" FontAttributes="Bold"/>
+    			<StackLayout Padding="20,0,20,0">
+    				<Entry x:Name="tbName" HorizontalOptions = "FillAndExpand"/>
+    			</StackLayout>
+    			<Label Text="{local:Translate tbMail}" FontAttributes="Bold"/>
+    			<StackLayout Padding="20,0,20,0">
+    				<Entry x:Name="tbMail" HorizontalOptions = "FillAndExpand"/>
+    			</StackLayout>
+                <Frame>
+                    <controls:SignaturePadView x:Name="signaturePad" BackgroundColor="White" StrokeColor="Black" HeightRequest="250"/>
+                </Frame>
+
+                <!--
+      			<acr:SignaturePadView x:Name="padView" HeightRequest="320" WidthRequest="240"
+                            CaptionText="" CaptionTextColor="Black" 
+                            PromptText="{local:Translate padViewPrompt}" PromptTextColor="Red"
+                            ClearText="{local:Translate padViewClear}" ClearTextColor="Red"
+                            SignatureLineColor="Red"
+                            StrokeColor="Black" StrokeWidth="3"
+                            BackgroundColor="White"
+                            />
+                -->
+    		</StackLayout>
+    	</ScrollView>
+
+	</ContentPage.Content>
+</ContentPage>

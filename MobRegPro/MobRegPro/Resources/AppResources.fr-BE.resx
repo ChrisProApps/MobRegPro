@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DemoLicenseActivated" xml:space="preserve">
+    <value>Licence de démonstration activée</value>
+    <comment>StartPage.cs</comment>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Demarrer</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnSettings" xml:space="preserve">
+    <value>Paramètres</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnAbout" xml:space="preserve">
+    <value>Info</value>
+    <comment>StartPage.xaml</comment>
+  </data>
+  <data name="btnActivate" xml:space="preserve">
+    <value>Activer</value>
+  </data>
+  <data name="lbProgress" xml:space="preserve">
+    <value>Démarrer...</value>
+  </data>
+  <data name="tbName" xml:space="preserve">
+    <value>Nom du contact :</value>
+  </data>
+  <data name="tbMail" xml:space="preserve">
+    <value>Nom du contact :</value>
+  </data>
+  <data name="padViewPrompt" xml:space="preserve">
+    <value>Signez ici</value>
+  </data>
+  <data name="padViewClear" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="itemSummary" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="SignatureTooLong" xml:space="preserve">
+    <value>La signature est trop grande. Il ne va pas être saufgardé.</value>
+  </data>
+  <data name="cpSettings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="tbsTitle" xml:space="preserve">
+    <value>Informations d'identification par défaut</value>
+  </data>
+  <data name="tbDefaultUsername" xml:space="preserve">
+    <value>Identifiant</value>
+  </data>
+  <data name="tbDefaultCarID" xml:space="preserve">
+    <value>Voiture ID</value>
+  </data>
+  <data name="tbDefaultPassword" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="cpResources" xml:space="preserve">
+    <value>Ressources</value>
+  </data>
+  <data name="Present" xml:space="preserve">
+    <value>Présent</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="lblPriority" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="lblOnReport" xml:space="preserve">
+    <value>Montrez sur le rapport</value>
+  </data>
+  <data name="lblRegistration" xml:space="preserve">
+    <value>Enregistrement</value>
+  </data>
+  <data name="lblgIsReadOnly" xml:space="preserve">
+    <value>Lecture seulement</value>
+  </data>
+  <data name="lblgPriority" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="lblgDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="lblgRegistration" xml:space="preserve">
+    <value>Enregistrement</value>
+  </data>
+  <data name="btnInput" xml:space="preserve">
+    <value>Affichez la sélection</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Supprimez l'enrigistrement</value>
+  </data>
+  <data name="btnTakePicture" xml:space="preserve">
+    <value>Prenez une photo</value>
+  </data>
+  <data name="NoCameraTitle" xml:space="preserve">
+    <value>Pas d'appareil photo</value>
+  </data>
+  <data name="NoCameraText" xml:space="preserve">
+    <value>:( Pas d'appareil photo disponible.</value>
+  </data>
+  <data name="CameraFailed" xml:space="preserve">
+    <value>L'appareil photo a échoué</value>
+  </data>
+  <data name="cpPlanningList" xml:space="preserve">
+    <value>Liste de planification</value>
+  </data>
+  <data name="itemRefresh" xml:space="preserve">
+    <value>Rafraîchir</value>
+  </data>
+  <data name="swDefaultInUse" xml:space="preserve">
+    <value>Utilisez les paramètres par défaut</value>
+  </data>
+  <data name="lblCaption" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+  <data name="enCaption" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+  <data name="enPriority" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="lblPicture" xml:space="preserve">
+    <value>Contient une image</value>
+  </data>
+  <data name="itemAdd" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="CaptionIsEmpty" xml:space="preserve">
+    <value>La légende est vide</value>
+  </data>
+  <data name="lblgOnReport" xml:space="preserve">
+    <value>Sur le rapport</value>
+  </data>
+  <data name="piInput" xml:space="preserve">
+    <value>Faire une sélection</value>
+  </data>
+  <data name="lblProgressRegistrations" xml:space="preserve">
+    <value>Chargement des enregistrements</value>
+  </data>
+  <data name="lblProgressPlanning" xml:space="preserve">
+    <value>Chargement de la planification</value>
+  </data>
+  <data name="btnStatusChange" xml:space="preserve">
+    <value>Changement de statut</value>
+  </data>
+  <data name="btnRegistrations" xml:space="preserve">
+    <value>Enregistrements</value>
+  </data>
+  <data name="btnInfo" xml:space="preserve">
+    <value>Information de la planification</value>
+  </data>
+  <data name="btnArticles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="btnResources" xml:space="preserve">
+    <value>Gens</value>
+  </data>
+  <data name="lbStatus" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="tbUserName" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="tbCar" xml:space="preserve">
+    <value>Voiture ID</value>
+  </data>
+  <data name="tbPassword" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="btnLoginGo" xml:space="preserve">
+    <value>Allez</value>
+  </data>
+  <data name="cpLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="SummaryTitle" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="InstructionsTitle" xml:space="preserve">
+    <value>Instructions</value>
+  </data>
+  <data name="InformationTitle" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="OrderInfo" xml:space="preserve">
+    <value>Information de la commande</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Voiture</value>
+  </data>
+  <data name="Technician" xml:space="preserve">
+    <value>Technicien</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Projet</value>
+  </data>
+  <data name="Reference" xml:space="preserve">
+    <value>Référenc</value>
+  </data>
+  <data name="Alias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Heure de début</value>
+  </data>
+  <data name="StopTime" xml:space="preserve">
+    <value>Heure de fin</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="CustomerInfo" xml:space="preserve">
+    <value>Information du client</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PhoneNr" xml:space="preserve">
+    <value>Numéro de téléphone</value>
+  </data>
+  <data name="Street" xml:space="preserve">
+    <value>Rue</value>
+  </data>
+  <data name="HouseNr" xml:space="preserve">
+    <value>Numéro</value>
+  </data>
+  <data name="Zipcode" xml:space="preserve">
+    <value>Code postal</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="Technicians" xml:space="preserve">
+    <value>Technicien(s)</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Chauffeur</value>
+  </data>
+  <data name="InGroup" xml:space="preserve">
+    <value>Dans le groupe</value>
+  </data>
+  <data name="InstallationReport" xml:space="preserve">
+    <value>Rapport d'installation</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Début</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="Pauze" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="TechCount" xml:space="preserve">
+    <value>Quantité de Techniciens </value>
+  </data>
+  <data name="RegistrationInfo" xml:space="preserve">
+    <value>Information des enregistrements</value>
+  </data>
+  <data name="ReadInstructionsFirst" xml:space="preserve">
+    <value>LIRES LES INSTRUCTIONS D'ABORD</value>
+  </data>
+  <data name="ArticleUsage" xml:space="preserve">
+    <value>Utilisation de l'article</value>
+  </data>
+  <data name="ArticleNr" xml:space="preserve">
+    <value>Numéro de l'article</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="tbArticleID" xml:space="preserve">
+    <value>numéro de l'article</value>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Scannez la clé de licence</value>
+  </data>
+  <data name="tbQty" xml:space="preserve">
+    <value>quantité</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="itemSearch" xml:space="preserve">
+    <value>Cherchez</value>
+  </data>
+  <data name="ScanBarcode" xml:space="preserve">
+    <value>Scannez la code-barre</value>
+  </data>
+  <data name="EnterValidArticleNr" xml:space="preserve">
+    <value>Entrez un numéro de l'article valide</value>
+  </data>
+  <data name="EnterValidQty" xml:space="preserve">
+    <value>Entrez une quantité valide</value>
+  </data>
+  <data name="DeleteArticle" xml:space="preserve">
+    <value>Supprimer l'article</value>
+  </data>
+  <data name="cpArticle" xml:space="preserve">
+    <value>Sélectionnez un article</value>
+  </data>
+  <data name="cpArtGroup" xml:space="preserve">
+    <value>Sélectionner un group d'article</value>
+  </data>
+  <data name="cpActivationPage" xml:space="preserve">
+    <value>Activation de licence</value>
+  </data>
+  <data name="lblLicenseKey" xml:space="preserve">
+    <value>Clé de licence :</value>
+  </data>
+  <data name="tbLicenseKey" xml:space="preserve">
+    <value>Entrez la clé de licence ici ou appuyez sur scan</value>
+  </data>
+  <data name="btnActiveLicense" xml:space="preserve">
+    <value>Activez licence</value>
+  </data>
+  <data name="btnMissing" xml:space="preserve">
+    <value>Pas de clé de licence?</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Entrez l'adresse e-mail pour demander une licence</value>
+  </data>
+  <data name="tbEmail" xml:space="preserve">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="btnEmail" xml:space="preserve">
+    <value>Demandez une clé de licence</value>
+  </data>
+  <data name="ScanLicenseCode" xml:space="preserve">
+    <value>Scannez la clé de licence</value>
+  </data>
+  <data name="LicenseRequested" xml:space="preserve">
+    <value>Demande de license FINI</value>
+  </data>
+  <data name="cpAbout" xml:space="preserve">
+    <value>A propos</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Revision" xml:space="preserve">
+    <value>Révision</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annulez</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimez</value>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>Pas de connexion réseau disponible</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="MissingSignature" xml:space="preserve">
+    <value>La signature manque</value>
+  </data>
+  <data name="NotAllRequiredRegistrationsProcessed" xml:space="preserve">
+    <value>Toutes les inscriptions obligatoires n’ont pas été exécutées. La modification du statut n’est possible que si toutes les inscriptions obligatoires ont été effectuées.</value>
+  </data>
+  <data name="NextStatus" xml:space="preserve">
+    <value>Status suivant</value>
+  </data>
+  <data name="Scanning" xml:space="preserve">
+    <value>Scannez</value>
+  </data>
+  <data name="btnClearTables" xml:space="preserve">
+    <value>Vider la base de données</value>
+  </data>
+  <data name="tbsData" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="txtTablesCleared" xml:space="preserve">
+    <value>La base des données est vide.</value>
+  </data>
+</root>

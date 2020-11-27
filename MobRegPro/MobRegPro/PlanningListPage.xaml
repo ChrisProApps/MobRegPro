@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobRegPro;assembly=MobRegPro"
+             x:Class="MobRegPro.PlanningListPage">
+  <ContentPage.Content>
+    <StackLayout Padding="0,20,0,0">
+
+      <StackLayout x:Name="statusPanel"  Orientation="Horizontal" IsVisible="false" Padding="10,5,10,5">
+      	<ActivityIndicator x:Name="activityIndicator" IsRunning="true" VerticalOptions="Center"  HorizontalOptions="Start"/>
+      	<Label x:Name="lbProgress" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" HorizontalOptions="StartAndExpand"  />
+      </StackLayout>
+
+      <ListView x:Name="lvPlanning" RowHeight="62" SeparatorColor="White" >
+      	<ListView.ItemTemplate>
+      		<DataTemplate>
+      			<ViewCell>
+	      			 <ViewCell.View>
+		      			 <StackLayout Spacing="6">
+			      				<StackLayout Orientation="Horizontal" BackgroundColor="#C4C4C4">
+			      					<Image Source="{Binding StatusImage}" Aspect="AspectFit" />
+				      				<StackLayout Padding="5,5,5,5">
+				      					<StackLayout Orientation="Horizontal">
+					      					<Label Text="{Binding StartTime, StringFormat='{0:dd-MM-yyyy}'}" TextColor="Black"/>
+					      					<Label Text="{Binding Customer}" TextColor="Red"/>
+					      				</StackLayout>
+					      				<StackLayout Orientation="Horizontal">
+					      					<Label Text="{Binding City}" TextColor="Black"/>
+					      					<Label Text="{Binding CarID}" TextColor="Black"/>
+					      					<Label Text="{Binding Reference}" TextColor="Black"/>
+					      				</StackLayout>
+				      				</StackLayout>
+			      				</StackLayout>
+		      				</StackLayout>
+	      			 </ViewCell.View>
+      			</ViewCell>
+      		</DataTemplate>
+
+      	</ListView.ItemTemplate>
+
+      </ListView>
+
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>
