@@ -28,13 +28,22 @@ namespace RegServices
 		private HttpClient client; 
 		private string url;
 
-		protected HttpService (string url)
+		protected HttpService(string url)
 		{
-			client = new HttpClient ();
+			var handler = new HttpClientHandler();
+			handler.ClientCertificateOptions = ClientCertificateOption.Manual;
+			handler.ServerCertificateCustomValidationCallback =
+				(httpRequestMessage, cert, cetChain, policyErrors) =>
+				{
+					return true;
+				};
+
+
+			client = new HttpClient(handler);
 			client.MaxResponseContentBufferSize = 256000;
 			this.url = url;
 		}
-			
+
 		/// <summary>
 		/// Processes the async, can be POST or GET depending on input.
 		/// </summary>
