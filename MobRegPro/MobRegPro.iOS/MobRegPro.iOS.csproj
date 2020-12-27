@@ -176,21 +176,25 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon167.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon29.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon1024.png" />
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\.DS_Store" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon60.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon76.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon58.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon40.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon80.png" />
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon87.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon120.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon152.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon20.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon180.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImages.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\120-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\120.png" />
   </ItemGroup>
 </Project>
