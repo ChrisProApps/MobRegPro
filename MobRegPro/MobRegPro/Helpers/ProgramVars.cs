@@ -20,6 +20,8 @@ namespace MobRegPro.Helpers
 		public static string LicURL = "https://bware.homeip.net:7143/LicensePortalRest/Process/";
 		//public static string LicURL = "https://proapps.be:23443/LicensePortalRest/Process/";
 
+		public static string DemoUserID = "ff38aa48-20cd-40fd-b90b-a106ec9e3b13";
+
 	}
 }
 

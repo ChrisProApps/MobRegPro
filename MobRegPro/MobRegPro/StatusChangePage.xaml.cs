@@ -63,7 +63,8 @@ namespace MobRegPro
 				lbStatusTime.Text = planning.StatusDateTime.ToString ("dd-MMM-yyyy HH:mm:ss");
 				panelStatus.BackgroundColor = Color.FromRgb (status.R, status.G, status.B);
 
-				statusSequences = StatusSequenceBuilder.Run ();
+				bool isDemoMode = App.appSettings.loginVars.userID.Equals(Guid.Parse(ProgramVars.DemoUserID));
+				statusSequences = StatusSequenceBuilder.Run (isDemoMode);
 				int statusID = planning.StatusID; 
 				StatusSequence s = (from sq in statusSequences
 					where sq.current.ID == statusID

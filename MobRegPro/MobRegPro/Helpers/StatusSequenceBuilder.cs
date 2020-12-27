@@ -10,7 +10,7 @@ namespace MobRegPro.Helpers
 		}
 
 
-		static public List<StatusSequence> Run()
+		static public List<StatusSequence> Run(bool isDemoMode)
 		{
 			List<StatusSequence> statusSequences = new List<StatusSequence>(10);
 
@@ -25,20 +25,20 @@ namespace MobRegPro.Helpers
 			s = new StatusSequence(2);
 			s.current = Common.GetStatus(StatusTypes.Accepted);
 			s.next.Add(Common.GetStatus(StatusTypes.DriveTo));
-			s.next.Add(Common.GetStatus(StatusTypes.Planned));
+			if(isDemoMode) s.next.Add(Common.GetStatus(StatusTypes.Planned));
 			statusSequences.Add(s);
 
 			s = new StatusSequence(2);
 			s.current = Common.GetStatus(StatusTypes.DriveTo);
 			s.next.Add(Common.GetStatus(StatusTypes.Started));
-			s.next.Add(Common.GetStatus(StatusTypes.Accepted));
+			//s.next.Add(Common.GetStatus(StatusTypes.Accepted));
 			statusSequences.Add(s);
 
 			s = new StatusSequence(3);
 			s.current = Common.GetStatus(StatusTypes.Started);
 			s.next.Add(Common.GetStatus(StatusTypes.Pauzed));
 			s.next.Add(Common.GetStatus(StatusTypes.Stopped));
-			s.next.Add(Common.GetStatus(StatusTypes.Planned));
+			if (isDemoMode) s.next.Add(Common.GetStatus(StatusTypes.Planned));
 			statusSequences.Add(s);
 
 			s = new StatusSequence(2);
