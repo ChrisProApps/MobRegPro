@@ -129,9 +129,7 @@ namespace RegServices
 		{
 			StatusResult result = new StatusResult ();
 			try {
-				HttpClient httpClient = new HttpClient();
-		
-				HttpResponseMessage response =  await httpClient.GetAsync(new Uri(url));
+				HttpResponseMessage response =  await client.GetAsync(new Uri(url));
 				await response.Content.CopyToAsync(stream);
 
 				if(!response.IsSuccessStatusCode)
@@ -157,10 +155,9 @@ namespace RegServices
 		{
 			StatusResult result = new StatusResult ();
 			try {
-				HttpClient httpClient = new HttpClient();
 				HttpContent content = new System.Net.Http.StreamContent(stream); //StringContent (postData, System.Text.Encoding.UTF8, "application/json");
 				//content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/image");
-				HttpResponseMessage response =  await httpClient.PostAsync(new Uri(url), content);
+				HttpResponseMessage response =  await client.PostAsync(new Uri(url), content);
 				if(!response.IsSuccessStatusCode)
 				{
 					result.statusCode = ((int)response.StatusCode) ;
