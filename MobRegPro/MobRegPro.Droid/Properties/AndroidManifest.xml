@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="be.proapps.mobregpro" android:versionName="1.0.8.3" android:versionCode="1083" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="be.proapps.mobregpro" android:versionName="1.0.9.0" android:versionCode="1090" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="29" />
 	<application android:label="MobRegPro" android:usesCleartextTraffic="true" android:icon="@drawable/mobreg">
 		<provider android:name="android.support.v4.content.FileProvider" android:authorities="be.proapps.mobregpro.fileprovider" android:exported="false" android:grantUriPermissions="true">
