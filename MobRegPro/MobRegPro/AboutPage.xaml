@@ -7,7 +7,7 @@
 		<StackLayout Padding="5,20,5,20">
 			<Label x:Name="lbRevsion" FontSize="24" TextColor="#0080FF" HorizontalOptions="Center"/>
 			<BoxView HeightRequest="20"/>
-			<Label Text="Copyright © ProApps 2015-2020" FontFamily="Bold" HorizontalOptions="Center"/>
+			<Label Text="Copyright © ProApps 2015-2021" FontFamily="Bold" HorizontalOptions="Center"/>
 			<BoxView HeightRequest="20"/>
 			<Image x:Name="imgLogo" Source="{local:ImageResourceExtention MobRegPro.Images.ProApps.png}" Aspect="AspectFit" IsVisible="false"/>
 			<BoxView HeightRequest="10"/>
